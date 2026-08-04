@@ -102,7 +102,7 @@
 }
 
 /* dark mode colors */
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   :root {
     --background-color: #1b1b1b;
     --gray-50: oklch(22% 0 0);
@@ -130,7 +130,7 @@
     --overlay-border: rgb(255 255 255 / 0.2);
     --popover-shadow: 0 8px 20px rgba(0 0 0 / 0.5);
   }
-}
+}*/
 
 /* Semantic colors */
 :root {
