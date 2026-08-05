@@ -8,9 +8,45 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: "SF Pro";
+  src: url("../fonts/SF-Pro-Text-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("../fonts/SF-Pro-Text-Semibold.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("../fonts/SF-Pro-Text-Bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}*/
+
+* {
+    font-family: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html, body {
+    font-size: 14px;
+}
+
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+  --font-sans: 'IBM Plex Sans', "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
