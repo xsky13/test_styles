@@ -1,6 +1,7 @@
 import { Button } from "~/components/ui/Button";
 import type { Route } from "./+types/home";
 import { TextField } from "~/components/ui/TextField";
+import { Tag, TagGroup } from "~/components/ui/TagGroup";
 
 export function meta({ }: Route.MetaArgs) {
 	return [
@@ -58,11 +59,40 @@ export default function Home() {
 							No completa
 						</p>
 					</div>
-				</div>
+                </div>
 
-				<div className="my-10 flex justify-between">
-					<h3 className="text-3xl font-medium">Pagos hechos</h3>
-				</div>
+                <div className="my-10 flex justify-between items-center">
+                      <h3 className="text-3xl font-medium">Pagos hechos</h3>
+                    </div>
+
+                    <div className="mt-6 divide-y divide-gray-200 border-b border-gray-200">
+
+                      <div className="flex items-center justify-between py-4 px-1">
+                          <div className="flex items-center gap-4">
+                              <div className="text-xl font-bold tabular-nums w-24">$10.000</div>
+                              <TagGroup selectionMode="none">
+                                <Tag>Pago virtual</Tag>
+                                <Tag>Seña</Tag>
+                              </TagGroup>
+                        </div>
+                        <span className="text-sm text-muted-foreground">6/5/23</span>
+                      </div>
+
+
+                    </div>
+
+				{/*<div className="my-10 flex justify-between">
+                    <h3 className="text-3xl font-medium">Pagos hechos</h3>
+                </div>
+
+                <div className="mt-10">
+                    <div className="flex justify-between items-center border-b border-gray-200 w-full pb-3 px-3">
+                        <div className="text-xl font-bold">$10000</div>
+                        <span>Manual: no</span>
+                        <span>Seña: si</span>
+                        <span className="text-sm text-muted-foreground font-medium">Fecha de pago: 6/5/23</span>
+                    </div>
+                </div>*/}
 			</div>
 		</>
 	);
